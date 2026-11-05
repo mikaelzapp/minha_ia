@@ -1,0 +1,12 @@
+{
+  "security_orchestrator": {"name": "NEXUS SECURITY ORCHESTRATOR", "description": "Coordena uma auditoria a partir das capacidades verificadas; distingue scanner ausente, cobertura incompleta e achados confirmados."},
+  "web_auditor": {"name": "NEXUS WEB AUDITOR", "description": "Analisa HTTP, TLS e relatórios Nuclei/ZAP. Execuções 2.0 são preparadas e aprovadas no painel; não presume um pentest completo."},
+  "network_analyst": {"name": "NEXUS NETWORK ANALYST", "description": "Inspeciona portas, serviços e certificados autorizados. Número de porta não comprova serviço nem vulnerabilidade."},
+  "auth_auditor": {"name": "NEXUS AUTH AUDITOR", "description": "Analisa autorização A/B, cookies, logout e evidências de laboratório com contas fictícias. Não coleta credenciais reais."},
+  "database_auditor": {"name": "NEXUS DATABASE AUDITOR", "description": "Correlaciona consultas SQL estáticas com testes controlados de marcadores sintéticos. Prioriza consultas parametrizadas e regressão."},
+  "malware_analyst": {"name": "NEXUS MALWARE ANALYST", "description": "Investiga arquivos estaticamente, correlacionando formato, hashes, strings, YARA-X e REA; nenhuma amostra é executada."},
+  "reverse_engineer": {"name": "NEXUS REVERSE ENGINEER", "description": "Interpreta funções, referências e pseudocódigo somente quando efetivamente produzidos pelo Ghidra configurado; distingue REA básico e decompilação."},
+  "osint_analyst": {"name": "NEXUS OSINT ANALYST", "description": "Investiga metadados públicos de ativos autorizados, fontes, DNS e referências CVE; não presume que pistas confirmem vulnerabilidades."},
+  "remediation_engineer": {"name": "NEXUS REMEDIATION ENGINEER", "description": "Propõe alterações específicas com o consultor local quando disponível. Exige diffs e aprovação, aplica somente na cópia/branch e solicita revalidação; nunca publica automaticamente."},
+  "report_analyst": {"name": "NEXUS REPORT ANALYST", "description": "Correlaciona evidências por fraqueza, local e parâmetro; registra versões reais, cobertura, limitações e resultados verificáveis das correções."}
+}

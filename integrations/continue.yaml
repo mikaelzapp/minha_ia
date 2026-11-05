@@ -1,0 +1,35 @@
+name: NEXUS Local
+version: 1.0.0
+schema: v1
+models:
+  - name: NEXUS Qwen 3.5 4B
+    provider: ollama
+    model: qwen3.5:4b-q4_K_M
+    apiBase: http://127.0.0.1:11434
+    roles:
+      - chat
+      - edit
+      - apply
+    capabilities:
+      - tool_use
+    defaultCompletionOptions:
+      contextLength: 4096
+      maxTokens: 1024
+      temperature: 0.3
+# Autocomplete e indexação IDE desativados para evitar dois modelos na VRAM.
+# A memória NEXUS mantém índice independente em SQLite.
+
+  # Consultor para propostas de código. Para Agent, use NEXUS Qwen 3.5 4B.
+  - name: NEXUS Coder 7B (consultor)
+    provider: ollama
+    model: qwen2.5-coder:7b
+    apiBase: http://127.0.0.1:11434
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      contextLength: 4096
+      maxTokens: 1536
+      temperature: 0.2
+      keepAlive: 0
