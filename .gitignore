@@ -1,0 +1,33 @@
+# Ambientes, navegadores, caches e estado local
+.venv/
+venv/
+.browsers/
+.runtime/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Nunca publicar historico, tokens, configuracoes pessoais ou projetos do usuario
+data/*
+!data/.gitkeep
+workspaces/*
+!workspaces/.gitkeep
+reports/*
+!reports/.gitkeep
+ENTREGA.md
+*.log
+*.bak
+*.secret
+*.sqlite3*
+*.sqlite*
+*.db
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+.publicacao/
